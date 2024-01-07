@@ -26,3 +26,13 @@ var person = {
 console.log(person.firstName);
 console.log(person.lastName);
 console.log(person.age);
+// enum 
+var Color;
+(function (Color) {
+    Color[Color["Red"] = 0] = "Red";
+    Color[Color["Green"] = 1] = "Green";
+    Color[Color["Blue"] = 2] = "Blue";
+})(Color || (Color = {}));
+console.log(Color.Red);
+console.log(Color.Green);
+console.log(Color.Blue);

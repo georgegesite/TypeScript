@@ -35,3 +35,13 @@ let person: {
 console.log(person.firstName);
 console.log(person.lastName);
 console.log(person.age);
+
+// enum 
+enum Color {
+        Red,
+        Green,
+        Blue
+    }   
+    console.log(Color.Red);
+    console.log(Color.Green);
+    console.log(Color.Blue);
