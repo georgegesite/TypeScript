@@ -29,3 +29,5 @@ app.get('/api/users', (req, res) => __awaiter(void 0, void 0, void 0, function* 
 app.listen(3000, () => {
     console.log('Server listening on port 3000');
 });
+//npm run build to compile
+//npm run start to run

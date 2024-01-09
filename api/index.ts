@@ -22,3 +22,7 @@ app.get('/api/users', async (req, res) => {
 app.listen(3000, () => {
   console.log('Server listening on port 3000');
 });
+
+
+//npm run build to compile
+//npm run start to run
