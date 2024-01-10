@@ -12,22 +12,29 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+/**
+ * Sets up an Express server with a /api/users route.
+ * The route makes a request to jsonplaceholder to get mock user data,
+ * returns the data as JSON to the client, and logs it to the console.
+ * Handles any errors by logging to console and returning a 500 status.
+ * Server listens on port 3000.
+ */
 const express_1 = __importDefault(require("express"));
 const axios_1 = __importDefault(require("axios"));
 const app = (0, express_1.default)();
-app.get('/api/users', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+app.get("/api/users", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const response = yield axios_1.default.get('https://jsonplaceholder.typicode.com/users');
+        const response = yield axios_1.default.get("https://jsonplaceholder.typicode.com/users");
         res.json(response.data);
         console.log(response.data);
     }
     catch (error) {
         console.error(error);
-        res.status(500).send('Internal server error');
+        res.status(500).send("Internal server error");
     }
 }));
 app.listen(3000, () => {
-    console.log('Server listening on port 3000');
+    console.log("Server listening on port 3000");
 });
 //npm run build to compile
 //npm run start to run
