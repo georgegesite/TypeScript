@@ -21,7 +21,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
  */
 const express_1 = __importDefault(require("express"));
 const axios_1 = __importDefault(require("axios"));
+const body_parser_1 = __importDefault(require("body-parser"));
+const port = "3000";
 const app = (0, express_1.default)();
+app.use(body_parser_1.default.urlencoded({ extended: true }));
 app.get("/api/users", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const response = yield axios_1.default.get("https://jsonplaceholder.typicode.com/users");
@@ -33,8 +36,21 @@ app.get("/api/users", (req, res) => __awaiter(void 0, void 0, void 0, function* 
         res.status(500).send("Internal server error");
     }
 }));
+app.get("/login", (req, res) => {
+    res.render("index.ejs");
+});
+app.get("/home", (req, res) => {
+    const username = req.body.username;
+    const password = req.body.password;
+    if (username === "admin" && password === "123") {
+        res.send("You are logged in");
+    }
+    else {
+        res.render("index.ejs");
+    }
+});
 app.listen(3000, () => {
-    console.log("Server listening on port 3000");
+    console.log(`Server is running on port ${port}`);
 });
 //npm run build to compile
 //npm run start to run

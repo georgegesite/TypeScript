@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: lightblue;
+      }
+
+      h1 {
+        color: navy;
+        margin-left: 20px;
+      }
+
+      form {
+        margin-left: 20px;
+      }
+
+      label {
+        display: inline-block;
+        width: 100px;
+        text-align: right;
+      }
+
+      input {
+        width: 200px;
+        padding: 3px 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      button {
+        padding: 5px;
+        border: none;
+        border-radius: 5px;
+        background: navy;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Login</h1>
+
+    <form action="/home" method="post">
+      <label for="username">Username:</label>
+      <input type="text" id="username" /><br /><br />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" /><br /><br />
+
+      <button>Login</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+node_modules
+.env
+build/
+tmp/
+
+# ignore all .log files 
+*.logYes, the code in the .gitignore file looks correct to ignore files like node_modules. The lines:
+     
+     ```
+     modules
+     .env
+     build/
+     tmp/
+     ```
+     
+     Will ignore the directories modules/, .env, build/, and tmp/ from being tracked by git.
+     
+     The line:
+     
+     ```
+     *.log
+     ```
+     
+     Will ignore any files ending in .log from being tracked.
+     
+     So this .gitignore file properly configures git to ignore common directories and files like node_modules that don't need to be committed to version control.
+     
