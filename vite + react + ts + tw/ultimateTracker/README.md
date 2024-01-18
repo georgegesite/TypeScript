@@ -1,5 +1,10 @@
-# some testing
+# Learning React + Vite + JavaScript + Tailwind
 
-# some updates
+I am learning how to build web applications using:
 
-# hapit nako maka uli
+- React - A popular JavaScript library for building user interfaces
+- Vite - A fast build tool that provides hot module replacement
+- JavaScript - The core programming language
+- Tailwind CSS - A utility-first CSS framework for styling
+
+I am excited to continue building projects with these technologies to improve my skills as a web developer.
