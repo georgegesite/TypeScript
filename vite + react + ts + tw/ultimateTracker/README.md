@@ -10,3 +10,4 @@ I am learning how to build web applications using:
 I am excited to continue building projects with these technologies to improve my skills as a web developer.
 
 I dont know what to build anymore, I have lost motivation
+Sometimes I want to code something, but I dont know what to code
