@@ -12,16 +12,16 @@ const Header = () => {
       <nav className="hidden md:block">
         <ul className="flex">
           <li>
-            <a href="/#about">About</a>
+            <a href="/#about">About my shit</a>
           </li>
           <li>
-            <a href="/#projects">Projects</a>
+            <a href="/#projects">Projects that I like</a>
           </li>
           <li>
-            <a href="/#blog">Blog</a>
+            <a href="/#blog">Blog to talk about</a>
           </li>
           <li>
-            <a href="/#contact">Contact</a>
+            <a href="/#contact">Contact me if you wanna chill</a>
           </li>
           <li>
             <a href="#resume -link" target="_blank" without rel="noreferrer">
