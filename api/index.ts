@@ -34,7 +34,7 @@ app.get("/login", (req, res) => {
 app.get("/home", (req, res) => {
   const username :string = req.body.username;
     const password :string = req.body.password;
-
+//what is this
     if (username === "admin" && password === "123") {
       res.send("You are logged in");
     } else {
