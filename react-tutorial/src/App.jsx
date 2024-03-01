@@ -1,6 +1,9 @@
 import { useState } from 'react'
-import './index.css'
-export default function App() {
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
+
+function App() {
   const [count, setCount] = useState(1)
 
   return (
@@ -8,7 +11,7 @@ export default function App() {
       <h1 className="text-3xl font-bold underline">
       This is a testing
     </h1>
-      <div className="border-2 border-red-500 button">
+      <div className="card">
         <button onClick={() => setCount((count) => count + count * 2)}>
           count is {count}
         </button>
@@ -17,3 +20,4 @@ export default function App() {
   )
 }
 
+export default App
