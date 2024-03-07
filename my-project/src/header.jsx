@@ -10,6 +10,7 @@ export default function Header() {
     <a href="#" className="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2">Details</a>
     <a href="#" className="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2">Contact</a>
   </div>
+   {/* sometimes coding can be tiring, bud don't quit */}
 </nav>
 
     </div>
