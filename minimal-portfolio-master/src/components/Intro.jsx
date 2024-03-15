@@ -17,7 +17,7 @@ function Intro() {
                className="text-cyan-600 hover:underline underline-offset-2 decoration-2 decoration-red-600"
                rel="noreferrer noopener"
             >
-               Press me
+            Press me
             </a>{' '}
             
          </p>
