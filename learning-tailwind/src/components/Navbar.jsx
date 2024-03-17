@@ -3,7 +3,7 @@ function Navbar() {
     <div className="px-10 pt-10  text-blue-300">
       <div className="navbar bg-base-100">
         <div className="flex-1 pl-20">
-          <a className=" btn btn-ghost text-xl">George Gesite</a>
+          <a className=" btn btn-ghost text-xl font-mono">George Gesite</a>
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal text-xl ">
